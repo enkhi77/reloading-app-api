@@ -1,7 +1,20 @@
 ﻿services:
-  webapi:
-    image: webapi
-    build:
-      context: .
-      dockerfile: WebAPI/Dockerfile
-
+#  webapi:
+#    image: webapi
+#    build:
+#      context: .
+#      dockerfile: WebAPI/Dockerfile
+  db:
+    image: postgres:17
+    restart: always
+    ports: 
+      - 5432:5432
+    shm_size: 128mb
+    environment:
+      POSTGRES_DB: reloadingdb
+      POSTGRES_USER: reloadinguser
+      POSTGRES_PASSWORD: HE110jed
+    volumes:
+      - reloading-data:/var/lib/postgresql/17/data
+volumes:
+  reloading-data:
