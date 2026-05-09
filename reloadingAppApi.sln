@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{64ADDCB6-685D-43E1-B114-4DB5F6DCA80B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReloadingAppWebApi", "ReloadingAppWebApi\ReloadingAppWebApi.csproj", "{64ADDCB6-685D-43E1-B114-4DB5F6DCA80B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E61B415-5F19-4E72-AFDA-FAFAC270FDD4}"
 	ProjectSection(SolutionItems) = preProject

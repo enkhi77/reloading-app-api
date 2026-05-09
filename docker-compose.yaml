@@ -5,8 +5,8 @@
 #      context: .
 #      dockerfile: WebAPI/Dockerfile
   db:
+    container_name: reloading-db
     image: postgres:17
-    restart: always
     ports: 
       - 5432:5432
     shm_size: 128mb
@@ -14,7 +14,8 @@
       POSTGRES_DB: reloadingdb
       POSTGRES_USER: reloadinguser
       POSTGRES_PASSWORD: HE110jed
+    restart: unless-stopped
     volumes:
-      - reloading-data:/var/lib/postgresql/17/data
+      - reloading-data:/var/lib/postgresql/data
 volumes:
   reloading-data:
